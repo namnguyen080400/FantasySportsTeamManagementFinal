@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMAA6xg/rWkqhtBOTuJuVDAAAAAACAAAAAAAQZgAAAAEAACAAAABnD76qVaEgV5whVSB6k9JmTFC41vlgUX24HUdkItPD8AAAAAAOgAAAAAIAACAAAABTiUtIHGGGGyEtXGtSpx2GwE3dm4D4+VrypCwis7dqBYAAAACq2+jJ8eQdjGG217vgZT5WaQAvUducpr4xNEti90xoyvQxB5Blr4vJrVhdA0hVnNDrlH67Yt753ZcU2HOvFtLhDjjE9k2ledxwPZ42lUbOOPx3dd3aJ533TMmTpbSFfJNxwFZ30FU8n1MXrNSZbw6nKwwKPU1hz35Y03FbAE5LuUAAAADRcTVRUCfSWwFihK83QozAvVfoiVEaOpCb3oKtXZb4ErOBakq6O7OVZT9GZMPVjmSYxpPgMGbCCkxBCLYAWJCr</EncryptedPassword>
+    <History>False|2024-12-10T02:34:07.0892034Z;False|2024-12-09T18:22:07.4507414-08:00;</History>
+    <LastFailureDetails />
+    <IsBasicAuthAllowed>True</IsBasicAuthAllowed>
+  </PropertyGroup>
+</Project>

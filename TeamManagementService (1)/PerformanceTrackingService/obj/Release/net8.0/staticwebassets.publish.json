@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "MzNLxmge3kwOOF9gFNcLIKYMxXnjffu9Kd3xboCZNpY=",
+  "Source": "PerformanceTrackingService",
+  "BasePath": "_content/PerformanceTrackingService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PerformanceTrackingService\\wwwroot",
+      "Source": "PerformanceTrackingService",
+      "ContentRoot": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "BasePath": "_content/PerformanceTrackingService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\Data.html",
+      "SourceId": "PerformanceTrackingService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "BasePath": "_content/PerformanceTrackingService",
+      "RelativePath": "Data.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Data.html"
+    },
+    {
+      "Identity": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\index.html",
+      "SourceId": "PerformanceTrackingService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "BasePath": "_content/PerformanceTrackingService",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

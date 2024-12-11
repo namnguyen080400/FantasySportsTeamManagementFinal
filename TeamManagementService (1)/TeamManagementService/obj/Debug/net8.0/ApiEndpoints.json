@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "Get",
+    "RelativePath": "api/TeamAuth/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TeamManagementService.Model.Team",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "CreateTeam",
+    "RelativePath": "api/TeamAuth/createTeam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "team",
+        "Type": "TeamManagementService.Model.Team",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "Login",
+    "RelativePath": "api/TeamAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "TeamManagementService.Model.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "UpdateTeam",
+    "RelativePath": "api/TeamAuth/UpdateTeam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTeam",
+        "Type": "TeamManagementService.Model.UpdateTeam",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

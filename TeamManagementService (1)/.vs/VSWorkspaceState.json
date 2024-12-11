@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PerformanceTrackingService",
+    "\\TeamManagementService",
+    "\\TeamManagementService\\Controllers"
+  ],
+  "SelectedNode": "\\TeamManagementService\\appsettings.json",
+  "PreviewInSolutionExplorer": false
+}

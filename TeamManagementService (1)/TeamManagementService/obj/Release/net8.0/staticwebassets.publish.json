@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "T/BiVAekiPp98OmyQZYU8kd5O3fJ/25tuacCsFLa3vM=",
+  "Source": "TeamManagementService",
+  "BasePath": "_content/TeamManagementService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TeamManagementService\\wwwroot",
+      "Source": "TeamManagementService",
+      "ContentRoot": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "BasePath": "_content/TeamManagementService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\index.html",
+      "SourceId": "TeamManagementService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "BasePath": "_content/TeamManagementService",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
