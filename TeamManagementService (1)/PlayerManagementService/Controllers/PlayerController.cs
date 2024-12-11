@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlayerManagementService.Data;
 using PlayerManagementService.Models;
@@ -10,23 +10,23 @@ namespace PlayerManagementService.Controllers
     [ApiController]
     public class PlayerController : ControllerBase
     {
-        private readonly PlayerContext _context;
+        private readonly Data.PlayerContext _context;
 
-        public PlayerController(PlayerContext context)
+        public PlayerController(Data.PlayerContext context)
         {
             _context = context;
         }
 
         // Get all players
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Player>>> GetPlayers()
+        public async Task<ActionResult<IEnumerable<Models.PlayerContext>>> GetPlayers()
         {
             return await _context.Players.ToListAsync();
         }
 
         // Get player by ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<Player>> GetPlayer(int id)
+        public async Task<ActionResult<Models.PlayerContext>> GetPlayer(int id)
         {
             var player = await _context.Players.FindAsync(id);
             if (player == null)

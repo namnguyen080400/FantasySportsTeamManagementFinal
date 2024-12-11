@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj": {}
+    "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj": {}
   },
   "projects": {
-    "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj": {
+    "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
+        "projectUniqueName": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
         "projectName": "PlayerManagementService",
-        "projectPath": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
-        "packagesPath": "C:\\Users\\Nikaw\\.nuget\\packages\\",
-        "outputPath": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\PlayerManagementService\\obj\\",
+        "projectPath": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
+        "packagesPath": "C:\\Users\\mguy0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nikaw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mguy0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,12 +51,6 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },
@@ -89,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

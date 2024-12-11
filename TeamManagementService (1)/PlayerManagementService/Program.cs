@@ -4,7 +4,10 @@ using PlayerManagementService.Data; // Update the namespace to match your projec
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure services
-
+builder.Services.AddDbContext<PlayerContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 builder.Services.AddCors(options =>
 {
@@ -18,14 +21,6 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-// Optional: Add Swagger for API testing
-
-
-
-var conString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<PlayerContext>(options =>
-    options.UseSqlServer(conString));
-
 
 var app = builder.Build();
 
