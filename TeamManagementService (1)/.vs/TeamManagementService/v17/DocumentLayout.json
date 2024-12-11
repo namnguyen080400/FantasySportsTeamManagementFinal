@@ -48,11 +48,15 @@
               "RelativeDocumentMoniker": "PlayerManagementService\\Program.cs",
               "ToolTip": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Program.cs",
               "RelativeToolTip": "PlayerManagementService\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T04:32:38.174Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
@@ -64,8 +68,7 @@
               "RelativeToolTip": "PlayerManagementService\\Migrations\\PlayerContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T05:07:58.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T05:07:58.271Z"
             },
             {
               "$type": "Document",
@@ -77,21 +80,19 @@
               "RelativeToolTip": "PlayerManagementService\\Migrations\\20241211050621_Matt.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T05:06:21.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T05:06:21.763Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerManagementService",
+              "Title": "PlayerManagementService.csproj",
               "DocumentMoniker": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
               "RelativeDocumentMoniker": "PlayerManagementService\\PlayerManagementService.csproj",
               "ToolTip": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\PlayerManagementService.csproj",
               "RelativeToolTip": "PlayerManagementService\\PlayerManagementService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-11T04:38:04.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T04:38:04.314Z"
             },
             {
               "$type": "Document",
@@ -103,8 +104,7 @@
               "RelativeToolTip": "PlayerManagementService\\Controllers\\PlayerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:36:02.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T04:36:02.181Z"
             },
             {
               "$type": "Document",
@@ -116,8 +116,7 @@
               "RelativeToolTip": "PlayerManagementService\\Data\\PlayerContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:35:00.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T04:35:00.611Z"
             },
             {
               "$type": "Document",
@@ -129,12 +128,7 @@
               "RelativeToolTip": "PlayerManagementService\\Model\\Player.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:33:57.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "WhenOpened": "2024-12-11T04:33:57.88Z"
             }
           ]
         }
