@@ -47,16 +47,20 @@
             border-radius: 4px;
         }
 
-            li:nth-child(even) {
-                background-color: #bdc3c7;
-            }
+        li:nth-child(even) {
+            background-color: #bdc3c7;
+        }
 
-            li:hover {
-                background-color: #95a5a6;
-                cursor: pointer;
-            }
+        li:hover {
+            background-color: #95a5a6;
+            cursor: pointer;
+        }
 
-        /* Error message styling */
+        .button-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
         .error-message {
             color: red;
             font-weight: bold;
@@ -73,11 +77,20 @@
             <!-- Available players will be dynamically inserted here -->
         </ul>
 
+        <div class="button-container">
+            <button onclick="draftPlayer()">Draft Selected Player</button>
+            <button onclick="releasePlayer()">Release Selected Player</button>
+        </div>
+
         <!-- Display for All Players (Registered and Drafted) -->
         <h2>All Players</h2>
         <ul id="all-players">
             <!-- All players will be dynamically inserted here -->
         </ul>
+
+        <div class="button-container">
+            <button onclick="registerPlayer()">Register New Player</button>
+        </div>
     </div>
 
     <script>
@@ -118,6 +131,79 @@
                 });
             } catch (error) {
                 console.error("Error fetching all players:", error);
+            }
+        }
+
+        // Function to register a new player
+        async function registerPlayer() {
+            const playerName = prompt("Enter player name:");
+            if (playerName) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/register`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ name: playerName })
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        alert(result.message);
+                        getAvailablePlayers(); // Refresh available players list
+                        getAllPlayers(); // Refresh all players list
+                    } else {
+                        alert(result.message);
+                    }
+                } catch (error) {
+                    console.error("Error registering player:", error);
+                }
+            }
+        }
+
+        // Function to draft a selected player
+        async function draftPlayer() {
+            const playerId = prompt("Enter player ID to draft:");
+            if (playerId) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/${playerId}/draft`, {
+                        method: "POST"
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        alert(result.message);
+                        getAvailablePlayers(); // Refresh available players list
+                        getAllPlayers(); // Refresh all players list
+                    } else {
+                        alert(result.message);
+                    }
+                } catch (error) {
+                    console.error("Error drafting player:", error);
+                }
+            }
+        }
+
+        // Function to release a selected player
+        async function releasePlayer() {
+            const playerId = prompt("Enter player ID to release:");
+            if (playerId) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/${playerId}/release`, {
+                        method: "POST"
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        alert(result.message);
+                        getAvailablePlayers(); // Refresh available players list
+                        getAllPlayers(); // Refresh all players list
+                    } else {
+                        alert(result.message);
+                    }
+                } catch (error) {
+                    console.error("Error releasing player:", error);
+                }
             }
         }
 
