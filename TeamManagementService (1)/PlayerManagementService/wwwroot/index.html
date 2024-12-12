@@ -3,155 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Sports Team Management</title>
+    <title>Player Management</title>
     <style>
+        /* styles.css */
+
+        /* General styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f4f4f4;
             color: #333;
         }
 
-        header {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #4CAF50;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 8px;
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        button {
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        h1 {
+            text-align: center;
+            color: #2c3e50;
         }
 
-        button:hover {
-            background-color: #45a049;
+        h2 {
+            color: #34495e;
+            margin-bottom: 10px;
         }
 
-        input, select {
-            padding: 10px;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 8px;
+            background-color: #ecf0f1;
             margin: 5px 0;
-            width: 100%;
-            box-sizing: border-box;
             border-radius: 4px;
-            border: 1px solid #ccc;
         }
 
-        .results {
-            margin-top: 20px;
-        }
+            li:nth-child(even) {
+                background-color: #bdc3c7;
+            }
 
-        .results pre {
-            background: #eee;
-            padding: 10px;
-            border-radius: 4px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
+            li:hover {
+                background-color: #95a5a6;
+                cursor: pointer;
+            }
+
+        /* Error message styling */
+        .error-message {
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Fantasy Sports Team Management</h1>
-        <p>Manage your teams, draft players, and track performance!</p>
-    </header>
+    <div class="container">
+        <h1>Player Management System</h1>
 
-    <section id="team-management">
-        <h2>Team Management</h2>
-        <form id="create-team-form">
-            <label for="team-name">Create a New Team</label>
-            <input type="text" id="team-name" placeholder="Enter team name" required>
-            <button type="submit">Create Team</button>
-        </form>
-        <div class="results" id="team-results"></div>
-    </section>
+        <!-- Display for Available Players -->
+        <h2>Available Players</h2>
+        <ul id="available-players">
+            <!-- Available players will be dynamically inserted here -->
+        </ul>
 
-    <section id="player-management">
-        <h2>Player Management</h2>
-        <form id="draft-player-form">
-            <label for="player-id">Draft a Player</label>
-            <input type="number" id="player-id" placeholder="Enter player ID" required>
-            <label for="team-id">For Team ID</label>
-            <input type="number" id="team-id" placeholder="Enter team ID" required>
-            <button type="submit">Draft Player</button>
-        </form>
-        <div class="results" id="player-results"></div>
-    </section>
-
-    <section id="performance-tracking">
-        <h2>Performance Tracking</h2>
-        <button id="simulate-competition">Simulate Competition</button>
-        <div class="results" id="competition-results"></div>
-    </section>
-
-    <section id="leaderboard">
-        <h2>Leaderboard</h2>
-        <button id="view-leaderboard">View Leaderboard</button>
-        <div class="results" id="leaderboard-results"></div>
-    </section>
+        <!-- Display for All Players (Registered and Drafted) -->
+        <h2>All Players</h2>
+        <ul id="all-players">
+            <!-- All players will be dynamically inserted here -->
+        </ul>
+    </div>
 
     <script>
-        const apiBaseUrl = "https://your-api-base-url.com"; // Replace with your deployed API URL
+        const apiBaseUrl = "http://localhost:5000/api/player"; // Set your local API URL
 
-        // Create a new team
-        document.getElementById("create-team-form").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const teamName = document.getElementById("team-name").value;
+        // Function to get available players
+        async function getAvailablePlayers() {
+            try {
+                const response = await fetch(`${apiBaseUrl}/available`);
+                const players = await response.json();
 
-            const response = await fetch(`${apiBaseUrl}/teams`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ teamName })
-            });
+                const availablePlayersList = document.getElementById("available-players");
+                availablePlayersList.innerHTML = ""; // Clear the list before populating
 
-            const result = await response.json();
-            document.getElementById("team-results").innerHTML = `<pre>${JSON.stringify(result, null, 2)}</pre>`;
-        });
+                players.forEach(player => {
+                    const li = document.createElement("li");
+                    li.textContent = `${player.name} (ID: ${player.id})`;
+                    availablePlayersList.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Error fetching available players:", error);
+            }
+        }
 
-        // Draft a player
-        document.getElementById("draft-player-form").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const playerId = document.getElementById("player-id").value;
-            const teamId = document.getElementById("team-id").value;
+        // Function to get all players
+        async function getAllPlayers() {
+            try {
+                const response = await fetch(`${apiBaseUrl}/all`);
+                const players = await response.json();
 
-            const response = await fetch(`${apiBaseUrl}/players/draft`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ playerId: Number(playerId), teamId: Number(teamId) })
-            });
+                const allPlayersList = document.getElementById("all-players");
+                allPlayersList.innerHTML = ""; // Clear the list before populating
 
-            const result = await response.json();
-            document.getElementById("player-results").innerHTML = `<pre>${JSON.stringify(result, null, 2)}</pre>`;
-        });
+                players.forEach(player => {
+                    const li = document.createElement("li");
+                    li.textContent = `${player.name} (ID: ${player.id}) - ${player.isAvailable ? 'Available' : 'Drafted'}`;
+                    allPlayersList.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Error fetching all players:", error);
+            }
+        }
 
-        // Simulate competition
-        document.getElementById("simulate-competition").addEventListener("click", async () => {
-            const response = await fetch(`${apiBaseUrl}/competitions/simulate`, { method: "POST" });
-            const result = await response.json();
-            document.getElementById("competition-results").innerHTML = `<pre>${JSON.stringify(result, null, 2)}</pre>`;
-        });
-
-        // View leaderboard
-        document.getElementById("view-leaderboard").addEventListener("click", async () => {
-            const response = await fetch(`${apiBaseUrl}/leaderboard`);
-            const result = await response.json();
-            document.getElementById("leaderboard-results").innerHTML = `<pre>${JSON.stringify(result, null, 2)}</pre>`;
-        });
+        // Initialize page by loading the data
+        window.onload = () => {
+            getAvailablePlayers();
+            getAllPlayers();
+        };
     </script>
 </body>
 </html>

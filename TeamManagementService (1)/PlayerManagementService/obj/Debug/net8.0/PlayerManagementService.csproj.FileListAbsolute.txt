@@ -167,3 +167,4 @@ C:\Users\mguy0\FantasySportsTeamManagementFinal\FantasySportsTeamManagementFinal
 C:\Users\mguy0\FantasySportsTeamManagementFinal\FantasySportsTeamManagementFinal\TeamManagementService (1)\PlayerManagementService\obj\Debug\net8.0\PlayerManagementService.pdb
 C:\Users\mguy0\FantasySportsTeamManagementFinal\FantasySportsTeamManagementFinal\TeamManagementService (1)\PlayerManagementService\obj\Debug\net8.0\PlayerManagementService.genruntimeconfig.cache
 C:\Users\mguy0\FantasySportsTeamManagementFinal\FantasySportsTeamManagementFinal\TeamManagementService (1)\PlayerManagementService\obj\Debug\net8.0\ref\PlayerManagementService.dll
+C:\Users\mguy0\FantasySportsTeamManagementFinal\FantasySportsTeamManagementFinal\TeamManagementService (1)\PlayerManagementService\bin\Debug\net8.0\PlayerManagementService.staticwebassets.runtime.json
