@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JC/Ekjw+1IuChekmuu6VzKFouqPVmhSlXOtSXJ2zyYM=",
+  "Hash": "Pm2XXU75UUS2kd6xiCH+Ng0M8yxO9pcFTU3zoAF6Nvc=",
   "Source": "PerformanceTrackingService",
   "BasePath": "_content/PerformanceTrackingService",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PerformanceTrackingService\\wwwroot",
       "Source": "PerformanceTrackingService",
-      "ContentRoot": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
       "BasePath": "_content/PerformanceTrackingService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\Data.html",
+      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\Data.html",
       "SourceId": "PerformanceTrackingService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
       "BasePath": "_content/PerformanceTrackingService",
       "RelativePath": "Data.html",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Data.html"
     },
     {
-      "Identity": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\index.html",
+      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\index.html",
       "SourceId": "PerformanceTrackingService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PerformanceTrackingService\\wwwroot\\",
       "BasePath": "_content/PerformanceTrackingService",
       "RelativePath": "index.html",
       "AssetKind": "All",

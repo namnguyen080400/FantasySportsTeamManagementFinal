@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\login.html",
-      "PackagePath": "staticwebassets\\login.html"
-    },
-    {
       "Id": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
       "PackagePath": "staticwebassets\\team_management.html"
     },

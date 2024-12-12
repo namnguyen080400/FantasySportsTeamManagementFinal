@@ -1,21 +1,15 @@
 [
   {
     "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
-    "Method": "Get",
-    "RelativePath": "api/TeamAuth/{id}",
+    "Method": "GetAllTeams",
+    "RelativePath": "api/TeamAuth",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "TeamManagementService.Model.Team",
+        "Type": "System.Collections.Generic.List\u00601[[TeamManagementService.Model.Team, TeamManagementService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -36,22 +30,6 @@
       {
         "Name": "team",
         "Type": "TeamManagementService.Model.Team",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
-    "Method": "Login",
-    "RelativePath": "api/TeamAuth/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "login",
-        "Type": "TeamManagementService.Model.Login",
         "IsRequired": true
       }
     ],

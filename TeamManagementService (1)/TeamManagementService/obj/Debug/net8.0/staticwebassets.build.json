@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9Ud8pJVMRru3UmcOCK4Mm7QD4KCitFUEafGTJGp3PxY=",
+  "Hash": "DGTXpUXcarwE9LDm1tjTm8bHSwpctsEFVC9uAKIu7dA=",
   "Source": "TeamManagementService",
   "BasePath": "_content/TeamManagementService",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\login.html",
-      "SourceId": "TeamManagementService",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
-      "BasePath": "_content/TeamManagementService",
-      "RelativePath": "login.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\login.html"
-    },
     {
       "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
       "SourceId": "TeamManagementService",
