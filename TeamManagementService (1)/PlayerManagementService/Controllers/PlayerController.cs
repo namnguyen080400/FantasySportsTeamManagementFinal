@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlayerManagementService.Data;
 using PlayerManagementService.Models;
-using System.Numerics;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PlayerManagementService.Controllers
 {
@@ -10,23 +12,24 @@ namespace PlayerManagementService.Controllers
     [ApiController]
     public class PlayerController : ControllerBase
     {
-        private readonly Data.PlayerContext _context;
+        private readonly PlayerContext _context;
 
-        public PlayerController(Data.PlayerContext context)
+        public PlayerController(PlayerContext context)
         {
             _context = context;
         }
 
-        // Get all players
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Models.PlayerContext>>> GetPlayers()
+
+        // Get all players (drafted and available)
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<Players>>> GetAllPlayers()
         {
             return await _context.Players.ToListAsync();
         }
 
         // Get player by ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<Models.PlayerContext>> GetPlayer(int id)
+        public async Task<ActionResult<Players>> GetPlayer(int id)
         {
             var player = await _context.Players.FindAsync(id);
             if (player == null)
@@ -36,16 +39,29 @@ namespace PlayerManagementService.Controllers
             return player;
         }
 
-        // Check player availability
-        [HttpGet("{id}/availability")]
-        public async Task<IActionResult> CheckAvailability(int id)
+        // Get only available (not drafted) players
+        [HttpGet("available")]
+        public async Task<ActionResult<IEnumerable<Players>>> GetAvailablePlayers()
         {
-            var player = await _context.Players.FindAsync(id);
-            if (player == null)
+            return await _context.Players
+                .Where(p => p.IsAvailable)
+                .ToListAsync();
+        }
+
+        // Register a new player
+        [HttpPost("register")]
+        public async Task<IActionResult> RegisterPlayer([FromBody] Players newPlayer)
+        {
+            if (newPlayer == null || string.IsNullOrWhiteSpace(newPlayer.Name))
             {
-                return NotFound();
+                return BadRequest(new { message = "Invalid player data." });
             }
-            return Ok(player.IsAvailable);
+
+            newPlayer.IsAvailable = true; // Ensure the player is available when registered
+            _context.Players.Add(newPlayer);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Player registered successfully", player = newPlayer });
         }
 
         // Draft a player
@@ -57,14 +73,15 @@ namespace PlayerManagementService.Controllers
             {
                 return NotFound();
             }
+
             if (!player.IsAvailable)
             {
-                return BadRequest("Player is not available");
+                return BadRequest(new { message = "Player is not available" });
             }
 
             player.IsAvailable = false;
             await _context.SaveChangesAsync();
-            return Ok("Player drafted successfully");
+            return Ok(new { message = "Player drafted successfully" });
         }
 
         // Release a player
@@ -79,7 +96,7 @@ namespace PlayerManagementService.Controllers
 
             player.IsAvailable = true;
             await _context.SaveChangesAsync();
-            return Ok("Player released successfully");
+            return Ok(new { message = "Player released successfully" });
         }
     }
 }

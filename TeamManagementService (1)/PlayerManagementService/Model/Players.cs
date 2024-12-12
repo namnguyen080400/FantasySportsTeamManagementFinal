@@ -29,10 +29,10 @@ using System.Reflection.Emit;
 
 namespace PlayerManagementService.Models
 {
-    public class PlayerContext
+    public class Players
     {
         [Key]
-        public int PlayerId { get; set; }
+        public int playerId { get; set; }
         [Required]
         public string Name { get; set; } = string.Empty;
         public bool IsAvailable { get; set; } = true;

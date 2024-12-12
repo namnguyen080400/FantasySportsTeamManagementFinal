@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{520BF602-80C7-430F-8305-048B772BC3AE}|TeamManagementService\\TeamManagementService.csproj|c:\\tmp\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\teammanagementservice\\controllers\\teamauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{520BF602-80C7-430F-8305-048B772BC3AE}|TeamManagementService\\TeamManagementService.csproj|solutionrelative:teammanagementservice\\controllers\\teamauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -40,14 +41,35 @@
     {
       "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\tmp\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\playermanagementservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\playermanagementservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+=======
+      "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\users\\mguy0\\fantasysportsteammanagementfinal\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
     },
     {
       "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\tmp\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\tmp\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\data\\playercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\data\\playercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\users\\mguy0\\fantasysportsteammanagementfinal\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\users\\mguy0\\fantasysportsteammanagementfinal\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\data\\playercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\data\\playercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\users\\mguy0\\fantasysportsteammanagementfinal\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|c:\\users\\mguy0\\fantasysportsteammanagementfinal\\fantasysportsteammanagementfinal\\teammanagementservice (1)\\playermanagementservice\\model\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05E5D86F-4B8D-4D98-B938-81D788A405C9}|PlayerManagementService\\PlayerManagementService.csproj|solutionrelative:playermanagementservice\\model\\players.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
     }
   ],
   "DocumentGroupContainers": [
@@ -57,17 +79,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Program.cs",
               "RelativeDocumentMoniker": "PlayerManagementService\\Program.cs",
               "ToolTip": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Program.cs",
               "RelativeToolTip": "PlayerManagementService\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC4AAAAEAAAAAAAAAA==",
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T04:32:38.174Z",
               "IsPinned": true,
@@ -88,6 +122,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "login.html",
               "DocumentMoniker": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\login.html",
@@ -217,29 +252,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+=======
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "PlayerManagementService\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\index.html",
+              "RelativeToolTip": "PlayerManagementService\\wwwroot\\index.html",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-12T02:58:02.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PlayerManagementService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PlayerManagementService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-12T02:55:14.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Controllers\\PlayerController.cs",
               "RelativeDocumentMoniker": "PlayerManagementService\\Controllers\\PlayerController.cs",
               "ToolTip": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Controllers\\PlayerController.cs",
               "RelativeToolTip": "PlayerManagementService\\Controllers\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:36:02.181Z"
+              "WhenOpened": "2024-12-11T04:36:02.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 11,
+=======
+              "DocumentIndex": 3,
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
               "Title": "PlayerContext.cs",
               "DocumentMoniker": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Data\\PlayerContext.cs",
               "RelativeDocumentMoniker": "PlayerManagementService\\Data\\PlayerContext.cs",
               "ToolTip": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Data\\PlayerContext.cs",
               "RelativeToolTip": "PlayerManagementService\\Data\\PlayerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:35:00.611Z"
+              "WhenOpened": "2024-12-11T04:35:00.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Model\\Player.cs",
@@ -247,6 +318,15 @@
               "ToolTip": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Model\\Player.cs",
               "RelativeToolTip": "PlayerManagementService\\Model\\Player.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+=======
+              "DocumentIndex": 5,
+              "Title": "Players.cs",
+              "DocumentMoniker": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Model\\Players.cs",
+              "RelativeDocumentMoniker": "PlayerManagementService\\Model\\Players.cs",
+              "ToolTip": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\Model\\Players.cs",
+              "RelativeToolTip": "PlayerManagementService\\Model\\Players.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAAAUAAAAAAAAAA==",
+>>>>>>> 6e35f59fb713d3d22b665bba1826c51b3cbcfee0
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T04:33:57.88Z",
               "EditorCaption": ""
