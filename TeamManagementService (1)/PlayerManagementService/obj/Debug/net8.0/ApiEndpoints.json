@@ -106,7 +106,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newPlayer",
+        "Name": "player",
         "Type": "PlayerManagementService.Models.Players",
         "IsRequired": true
       }

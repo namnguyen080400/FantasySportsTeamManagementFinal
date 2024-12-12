@@ -49,20 +49,22 @@ namespace PlayerManagementService.Controllers
         }
 
         // Register a new player
+        // POST: api/player/register
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterPlayer([FromBody] Players newPlayer)
+        public async Task<IActionResult> RegisterPlayer([FromBody] Players player)
         {
-            if (newPlayer == null || string.IsNullOrWhiteSpace(newPlayer.Name))
+            if (string.IsNullOrEmpty(player.Name))
             {
-                return BadRequest(new { message = "Invalid player data." });
+                return BadRequest(new { message = "Player name is required" });
             }
 
-            newPlayer.IsAvailable = true; // Ensure the player is available when registered
-            _context.Players.Add(newPlayer);
+            player.IsAvailable = true; // Ensure the new player is available by default
+            _context.Players.Add(player);
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Player registered successfully", player = newPlayer });
+            return Ok(new { message = "Player registered successfully", player });
         }
+
 
         // Draft a player
         [HttpPost("{id}/draft")]
