@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\PerformanceTrackingService",
+    "\\PerformanceTrackingService\\wwwroot",
+    "\\PlayerManagementService",
     "\\TeamManagementService",
     "\\TeamManagementService\\Controllers"
   ],
-  "SelectedNode": "\\TeamManagementService\\appsettings.json",
+  "SelectedNode": "\\PlayerManagementService\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

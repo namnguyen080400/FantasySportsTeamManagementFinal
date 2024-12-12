@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
+      "PackagePath": "staticwebassets\\team_management.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TeamManagementService.Microsoft.AspNetCore.StaticWebAssets.props",

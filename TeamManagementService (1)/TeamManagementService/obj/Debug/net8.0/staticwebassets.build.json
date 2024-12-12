@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R1F7u4NBf4Uqk//KY8LPLEPhkjhK4cfRxWuYEGCxppM=",
+  "Hash": "9Ud8pJVMRru3UmcOCK4Mm7QD4KCitFUEafGTJGp3PxY=",
   "Source": "TeamManagementService",
   "BasePath": "_content/TeamManagementService",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "TeamManagementService\\wwwroot",
       "Source": "TeamManagementService",
-      "ContentRoot": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
       "BasePath": "_content/TeamManagementService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\index.html",
+      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\login.html",
       "SourceId": "TeamManagementService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mguy0\\FantasySportsTeamManagementFinal\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
       "BasePath": "_content/TeamManagementService",
-      "RelativePath": "index.html",
+      "RelativePath": "login.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
+      "SourceId": "TeamManagementService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "BasePath": "_content/TeamManagementService",
+      "RelativePath": "team_management.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\team_management.html"
     }
   ]
 }
