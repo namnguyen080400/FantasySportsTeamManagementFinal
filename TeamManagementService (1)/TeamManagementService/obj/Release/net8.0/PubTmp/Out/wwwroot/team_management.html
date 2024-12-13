@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .teams-list {
+            margin-top: 20px;
+        }
+
+        .team-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Team Management</h1>
+
+        <!-- Create Team Section -->
+        <section class="form-section">
+            <h2>Create Team</h2>
+            <form id="createTeamForm">
+                <label for="teamName">Team Name:</label>
+                <input type="text" id="teamName" name="teamName" required>
+                <button type="submit">Create Team</button>
+            </form>
+        </section>
+
+        <!-- Update Team Section -->
+        <section class="form-section">
+            <h2>Update Team</h2>
+            <form id="updateTeamForm">
+                <label for="teamId">Team ID:</label>
+                <input type="number" id="teamId" name="teamId" required>
+
+                <label for="newTeamName">Number of Members:</label>
+                <input type="number" id="newTeamName" name="newTeamName" required>
+
+                <button type="submit">Update Team</button>
+            </form>
+        </section>
+
+        <!-- Retrieve Teams Section -->
+        <section>
+            <h2>Retrieve Teams</h2>
+            <button id="retrieveTeamsBtn">Get Teams</button>
+            <div id="teamsList" class="teams-list"></div>
+        </section>
+    </div>
+
+    <script>
+        // Base API URL
+        const apiBaseUrl = "https://localhost:7248/api/TeamAuth";
+
+        const apiBaseUrl = "https://teamservice-f8gsathxfef9dqbq.canadacentral-01.azurewebsites.net";
+
+        // Create Team
+        const createTeamForm = document.getElementById('createTeamForm');
+        createTeamForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const teamName = document.getElementById('teamName').value;
+
+            try {
+                const response = await fetch(`${apiBaseUrl}/createTeam`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ TeamName: teamName }) // Ensure correct structure
+                });
+
+                if (!response.ok) {
+                    const error = await response.text();
+                    throw new Error(error);
+                }
+
+                alert('Team created successfully!');
+                createTeamForm.reset();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+
+        // Update Team
+        const updateTeamForm = document.getElementById('updateTeamForm');
+        updateTeamForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const teamId = parseInt(document.getElementById('teamId').value);
+            const numberOfTeam = parseInt(document.getElementById('newTeamName').value);
+
+            try {
+                const response = await fetch(`${apiBaseUrl}/UpdateTeam`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ TeamId: teamId, NumberOfTeam: numberOfTeam }) // Correct structure for update
+                });
+
+                if (!response.ok) {
+                    const error = await response.text();
+                    throw new Error(error);
+                }
+
+                alert('Team updated successfully!');
+                updateTeamForm.reset();
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+
+        const retrieveTeamsBtn = document.getElementById('retrieveTeamsBtn');
+        retrieveTeamsBtn.addEventListener('click', async function () {
+            try {
+                const response = await fetch(`${apiBaseUrl}`); // Adjusted to fetch all teams
+
+                if (!response.ok) {
+                    const error = await response.text();
+                    throw new Error(error);
+                }
+
+                const teams = await response.json();
+                const teamsList = document.getElementById('teamsList');
+                teamsList.innerHTML = ''; // Clear the list before rendering new teams
+
+                if (teams.length === 0) {
+                    teamsList.innerHTML = '<p>No teams found.</p>'; // Handle empty response
+                    return;
+                }
+
+                teams.forEach(team => {
+                    const teamElement = document.createElement('div');
+                    teamElement.className = 'team-card';
+                    teamElement.innerHTML = `
+                    <h4>${team.teamName}</h4>
+                    <p>Number of Members: ${team.numberOfTeam}</p>
+                `;
+                    teamsList.appendChild(teamElement);
+                });
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+
+    </script>
+</body>
+</html>
+

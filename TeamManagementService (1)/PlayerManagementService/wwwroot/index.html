@@ -118,7 +118,9 @@
     </div>
 
     <script>
-        const apiBaseUrl = "https://localhost:7298/api/player";
+        //const apiBaseUrl = "https://localhost:7298/api/player";
+       // const apiBaseUrl = "https://yaperformancetrackingservice.azurewebsites.net/"; 
+          apiBaseUrl = "https://player-d9g2ewayd9b2ama9.canadacentral-01.azurewebsites.net/";
 
         // Function to populate tables
         function populateTable(tableId, data) {
@@ -138,7 +140,7 @@
         // Function to get available players
         async function getAvailablePlayers() {
             try {
-                const response = await fetch(`${apiBaseUrl}/available`);
+               const response = await fetch(apiBaseUrl + '/available');
                 const players = await response.json();
                 console.log("Available Players:", players);
                 populateTable("available-players", players);

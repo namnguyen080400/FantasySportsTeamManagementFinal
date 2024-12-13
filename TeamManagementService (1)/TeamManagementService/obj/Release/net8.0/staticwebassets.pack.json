@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
+      "PackagePath": "staticwebassets\\team_management.html"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.TeamManagementService.Microsoft.AspNetCore.StaticWebAssets.props",

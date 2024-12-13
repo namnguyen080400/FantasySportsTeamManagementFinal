@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.PlayerManagementService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.PlayerManagementService.props",
+      "PackagePath": "build\\PlayerManagementService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PlayerManagementService.props",
+      "PackagePath": "buildMultiTargeting\\PlayerManagementService.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.PlayerManagementService.props",
+      "PackagePath": "buildTransitive\\PlayerManagementService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

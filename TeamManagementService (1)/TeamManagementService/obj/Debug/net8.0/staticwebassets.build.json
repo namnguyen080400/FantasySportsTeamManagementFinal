@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DGTXpUXcarwE9LDm1tjTm8bHSwpctsEFVC9uAKIu7dA=",
+  "Hash": "ZhIJxEKFMRQUtat5Gm2+BkO8S/t0sncfBb694ElaKJE=",
   "Source": "TeamManagementService",
   "BasePath": "_content/TeamManagementService",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TeamManagementService\\wwwroot",
       "Source": "TeamManagementService",
-      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "ContentRoot": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
       "BasePath": "_content/TeamManagementService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
+      "Identity": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\team_management.html",
       "SourceId": "TeamManagementService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\tmp\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
+      "ContentRoot": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\TeamManagementService\\wwwroot\\",
       "BasePath": "_content/TeamManagementService",
       "RelativePath": "team_management.html",
       "AssetKind": "All",

@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "GetAllTeams",
+    "RelativePath": "api/TeamAuth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TeamManagementService.Model.Team, TeamManagementService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "CreateTeam",
+    "RelativePath": "api/TeamAuth/createTeam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "team",
+        "Type": "TeamManagementService.Model.Team",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TeamManagementService.Controllers.TeamAuthController",
+    "Method": "UpdateTeam",
+    "RelativePath": "api/TeamAuth/UpdateTeam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTeam",
+        "Type": "TeamManagementService.Model.UpdateTeam",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

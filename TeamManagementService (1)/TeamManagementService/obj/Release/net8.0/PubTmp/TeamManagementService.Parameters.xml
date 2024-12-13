@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="TeamService" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\422Prac\\DEV422FinalProject-main\\TeamManagementService\ \(1\)\\TeamManagementService\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService\ \(1\)\\TeamManagementService\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

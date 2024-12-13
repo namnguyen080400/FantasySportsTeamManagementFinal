@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlayerManagementService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0373b2738c2eab2ec73ca95fec1f839d8232ad4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d153cb99faa9e155610972b310239eb450c0a6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlayerManagementService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlayerManagementService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

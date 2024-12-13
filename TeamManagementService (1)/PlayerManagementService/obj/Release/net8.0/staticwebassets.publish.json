@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "jd3H8m97hedyqj+ce0kPSZOMRQWs41nLJY6GhJvmz7Y=",
+  "Source": "PlayerManagementService",
+  "BasePath": "_content/PlayerManagementService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PlayerManagementService\\wwwroot",
+      "Source": "PlayerManagementService",
+      "ContentRoot": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\",
+      "BasePath": "_content/PlayerManagementService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\index.html",
+      "SourceId": "PlayerManagementService",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\final\\FantasySportsTeamManagementFinal\\TeamManagementService (1)\\PlayerManagementService\\wwwroot\\",
+      "BasePath": "_content/PlayerManagementService",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

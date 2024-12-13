@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Management</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Player Management System</h1>
+
+        <!-- Table for Available Players -->
+        <h2>Available Players</h2>
+        <table id="available-players">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Available players will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <!-- Table for All Players -->
+        <h2>All Players</h2>
+        <table id="all-players">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- All players will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <div class="button-container">
+            <button id="register-button">Register New Player</button>
+            <button id="draft-button">Draft Player</button>
+            <button id="release-button">Release Player</button>
+        </div>
+    </div>
+
+    <script>
+        const apiBaseUrl = "https://localhost:7298/api/player";
+       // const apiBaseUrl = "https://yaperformancetrackingservice.azurewebsites.net/"; 
+          apiBaseUrl = "https://player-d9g2ewayd9b2ama9.canadacentral-01.azurewebsites.net/";
+
+        // Function to populate tables
+        function populateTable(tableId, data) {
+            const tableBody = document.querySelector(`#${tableId} tbody`);
+            tableBody.innerHTML = ""; // Clear existing rows
+
+            data.forEach(player => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                        <td>${player.name}</td>
+                        <td>${player.playerId}</td>
+                    `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Function to get available players
+        async function getAvailablePlayers() {
+            try {
+               const response = await fetch(apiBaseUrl + '/available');
+                const players = await response.json();
+                console.log("Available Players:", players);
+                populateTable("available-players", players);
+            } catch (error) {
+                console.error("Error fetching available players:", error);
+            }
+        }
+
+        // Function to get all players
+        async function getAllPlayers() {
+            try {
+                const response = await fetch(`${apiBaseUrl}/all`);
+                const players = await response.json();
+                console.log("All Players:", players);
+                populateTable("all-players", players);
+            } catch (error) {
+                console.error("Error fetching all players:", error);
+            }
+        }
+
+        // Function to register a new player
+        async function registerPlayer() {
+            const playerName = prompt("Enter player name:");
+            if (playerName) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/register`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ name: playerName })
+                    });
+
+                    if (response.ok) {
+                        alert("Player registered successfully!");
+                        getAvailablePlayers();
+                        getAllPlayers();
+                    } else {
+                        const result = await response.json();
+                        alert(result.message || "Failed to register player.");
+                    }
+                } catch (error) {
+                    console.error("Error registering player:", error);
+                }
+            }
+        }
+
+        // Function to draft a player
+        async function draftPlayer() {
+            const playerId = prompt("Enter player ID to draft:");
+            if (playerId) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/${playerId}/draft`, { method: "POST" });
+
+                    if (response.ok) {
+                        alert("Player drafted successfully!");
+                        getAvailablePlayers();
+                        getAllPlayers();
+                    } else {
+                        const result = await response.json();
+                        alert(result.message || "Failed to draft player.");
+                    }
+                } catch (error) {
+                    console.error("Error drafting player:", error);
+                }
+            }
+        }
+
+        // Function to release a player
+        async function releasePlayer() {
+            const playerId = prompt("Enter player ID to release:");
+            if (playerId) {
+                try {
+                    const response = await fetch(`${apiBaseUrl}/${playerId}/release`, { method: "POST" });
+
+                    if (response.ok) {
+                        alert("Player released successfully!");
+                        getAvailablePlayers();
+                        getAllPlayers();
+                    } else {
+                        const result = await response.json();
+                        alert(result.message || "Failed to release player.");
+                    }
+                } catch (error) {
+                    console.error("Error releasing player:", error);
+                }
+            }
+        }
+
+        // Initialize page
+        window.onload = () => {
+            document.getElementById("register-button").onclick = registerPlayer;
+            document.getElementById("draft-button").onclick = draftPlayer;
+            document.getElementById("release-button").onclick = releasePlayer;
+
+            getAvailablePlayers();
+            getAllPlayers();
+        };
+    </script>
+</body>
+</html>
